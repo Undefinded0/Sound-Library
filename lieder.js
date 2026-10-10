@@ -3,8 +3,8 @@
    ---------------------------------------------------------
    - Die MP3-Dateien kommen in den Ordner "audio".
    - "datei" muss GENAU so heißen wie die Datei im Ordner
-     (Groß-/Kleinschreibung beachten, am besten ohne
-     Leerzeichen und Umlaute, z. B. 01-marsch.mp3).
+     (auch Leerzeichen, Bindestriche, Groß-/Kleinschreibung).
+   - "titel" ist das, was auf der Seite angezeigt wird.
    - "info" ist optional (z. B. Komponist oder Arrangeur).
    - Die Reihenfolge hier = Reihenfolge auf der Seite.
    - Nach jedem Eintrag ein Komma, nur nach dem letzten nicht.
@@ -15,9 +15,13 @@ window.KONZERT = {
   untertitel: "Probenaufnahmen zum Anhören",
 
   lieder: [
-    { titel: "Beispiel-Stück 1", info: "Komponist eintragen", datei: "audio/01-beispiel.mp3" },
-    { titel: "Beispiel-Stück 2", info: "Komponist eintragen", datei: "audio/02-beispiel.mp3" },
-    { titel: "Beispiel-Stück 3", info: "Komponist eintragen", datei: "audio/03-beispiel.mp3" },
-    { titel: "Beispiel-Stück 4", info: "",                    datei: "audio/04-beispiel.mp3" }
+    { titel: "A Childhood Remembered", info: "Rossano Galante",  datei: "audio/A Childhood Remembered - Rossano Galante.mp3" },
+    { titel: "Adventure",              info: "Markus Götz",      datei: "audio/Adventure - Markus Götz.mp3" },
+    { titel: "Dance With The Devil",   info: "Fritz Neuböck",    datei: "audio/Dance With The Devil -  Fritz Neuböck.mp3" },
+    { titel: "Dramatic Tales",         info: "Markus Götz",      datei: "audio/Dramatic Tales - Markus Götz.mp3" },
+    { titel: "Ehrenwort",              info: "Fäaschtbänkler",   datei: "audio/Ehrenwort - Fäaschtbänkler.mp3" },
+    { titel: "Heublumen Polka",        info: "Kurt Gäble",       datei: "audio/Heublumen Polka - Kurt Gäble.mp3" },
+    { titel: "Rapunzel",               info: "Bert Appermont",   datei: "audio/Rapunzel – Bert Appermont.mp3" },
+    { titel: "The Greatest Showman",   info: "Paul Murtha",      datei: "audio/The Greates Showman - Paul Murtha.mp3" }
   ]
 };
