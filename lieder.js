@@ -11,8 +11,14 @@
    ========================================================= */
 
 window.KONZERT = {
-  titel: "Jahreskonzert 2026",
-  untertitel: "Probenaufnahmen zum Anhören",
+  titel: "Herbstkonzert 2026",
+  untertitel: "Referenzaufnahmen von anderen Orchestern",
+
+  // Hinweis-Kasten oben auf der Seite (zum Ausblenden: hinweis: null)
+  hinweis: {
+    titel: "Nur zum Üben",
+    text: "Diese Aufnahmen stammen nicht von der Musikkapelle Meckenhausen, sondern von anderen Orchestern. Sie dienen ausschließlich unseren Mitgliedern als Hilfe zum Üben. Bitte nicht weitergeben, veröffentlichen oder anderweitig verwenden."
+  },
 
   lieder: [
     { titel: "A Childhood Remembered", info: "Rossano Galante",  datei: "audio/A Childhood Remembered - Rossano Galante.mp3" },
