@@ -1,0 +1,121 @@
+==============================================
+  KONZERT-PLAYER – ANLEITUNG
+  Musikkapelle Meckenhausen
+==============================================
+
+WIE ES FUNKTIONIERT
+  Die Dateien liegen in einem PRIVATEN GitHub-Repository.
+  Niemand außer dir sieht dort etwas.
+  Cloudflare Pages (kostenlos) holt sich die Dateien von
+  GitHub und macht daraus die Webseite. Nur wer den Link
+  kennt, kommt drauf. Google & Co. werden ausgesperrt.
+
+  Warum nicht nur GitHub Pages?
+  Kostenlos ist eine GitHub-Pages-Seite immer öffentlich,
+  und das Repository muss dafür öffentlich sein. Dann
+  könnte jeder auf GitHub die MP3s finden.
+
+
+----------------------------------------------
+SCHRITT 1: LIEDER VORBEREITEN
+----------------------------------------------
+  1. MP3s in den Ordner "audio" legen.
+     Dateinamen am besten so: 01-marsch.mp3, 02-polka.mp3
+     (keine Leerzeichen, keine Umlaute)
+  2. Jede Datei darf höchstens 25 MB groß sein.
+     Mit 192 kbit/s passen ca. 17 Minuten in eine Datei.
+  3. Die Datei "lieder.js" mit dem Editor öffnen und
+     Titel, Konzertname und Dateinamen eintragen.
+  4. Die Beispiel-Einträge löschen oder überschreiben.
+
+  Testen am PC: index.html doppelklicken. In manchen
+  Browsern läuft die Musik erst, wenn die Seite online ist.
+
+
+----------------------------------------------
+SCHRITT 2: PRIVATES GITHUB-REPOSITORY
+----------------------------------------------
+  1. Auf github.com ein kostenloses Konto anlegen.
+  2. Oben rechts "+" > "New repository".
+  3. Name z. B. "kapelle-konzert", "Private" auswählen,
+     "Create repository" klicken.
+  4. Auf "uploading an existing file" klicken.
+  5. ALLE Dateien aus diesem Ordner hineinziehen,
+     auch den Ordner "audio" mit den MP3s.
+  6. Unten "Commit changes" klicken.
+
+  Bei vielen Dateien ist "GitHub Desktop" (kostenlos)
+  bequemer: Ordner auswählen, "Commit" und "Push".
+
+
+----------------------------------------------
+SCHRITT 3: WEBSEITE MIT CLOUDFLARE PAGES
+----------------------------------------------
+  1. Auf dash.cloudflare.com ein kostenloses Konto anlegen.
+  2. Links "Workers & Pages" > "Erstellen" >
+     Reiter "Pages" > "Mit Git verbinden".
+  3. GitHub verbinden und NUR das Repository
+     "kapelle-konzert" freigeben.
+  4. Projektname = Teil des Links. Nimm etwas, das man
+     nicht erraten kann, z. B. "mkm-konzert-k7q2x".
+     Der Link heißt dann: https://mkm-konzert-k7q2x.pages.dev
+  5. Build-Einstellungen:
+       Framework:            Keines / None
+       Build-Befehl:         (leer lassen)
+       Ausgabeverzeichnis:   /
+  6. "Speichern und bereitstellen" klicken.
+     Nach ca. 1 Minute ist die Seite online.
+
+  (Cloudflare ändert die Menüs manchmal etwas.
+   Gesucht ist immer: Pages-Projekt "mit Git verbinden".)
+
+
+----------------------------------------------
+SCHRITT 4: LINK TEILEN
+----------------------------------------------
+  Den .pages.dev-Link in die WhatsApp-Gruppe schicken.
+
+  iPhone/iPad: Link in Safari öffnen > Teilen >
+               "Zum Home-Bildschirm"
+  Android:     Link in Chrome öffnen > ⋮ >
+               "Zum Startbildschirm hinzufügen"
+  Auto:        Handy per Bluetooth oder CarPlay verbinden,
+               auf der Seite Play drücken. Titel erscheinen
+               im Display, Lenkradtasten springen zum
+               nächsten/vorigen Lied.
+
+
+----------------------------------------------
+NEUES KONZERT / LIEDER AUSTAUSCHEN
+----------------------------------------------
+  1. Im GitHub-Repository alte MP3s löschen,
+     neue hochladen.
+  2. lieder.js auf GitHub anklicken > Stift-Symbol >
+     Titel ändern > "Commit changes".
+  3. Cloudflare aktualisiert die Seite automatisch,
+     der Link bleibt gleich.
+
+
+----------------------------------------------
+NOCH SICHERER (OPTIONAL)
+----------------------------------------------
+  Ein Link kann weitergeleitet werden. Wenn wirklich
+  nur Mitglieder rein sollen:
+  Cloudflare "Zero Trust" > "Access" > Anwendung für die
+  .pages.dev-Adresse anlegen und die E-Mail-Adressen der
+  Mitglieder eintragen (kostenlos bis 50 Personen).
+  Dann bekommt jeder beim Öffnen einen Code per E-Mail.
+
+
+----------------------------------------------
+WENN ETWAS NICHT GEHT
+----------------------------------------------
+  "Datei fehlt" / "fehlt" in der Liste:
+    Dateiname in lieder.js stimmt nicht genau mit der
+    Datei im Ordner audio überein (auch .mp3 vs .MP3).
+  Seite zeigt keine Lieder:
+    In lieder.js fehlt ein Komma oder ein Anführungszeichen.
+  Upload abgelehnt:
+    Datei größer als 25 MB > MP3 mit 192 kbit/s neu
+    exportieren.
+==============================================
