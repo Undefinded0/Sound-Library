@@ -9,16 +9,16 @@
 
 window.IMPRESSUM = {
   // Wer ist für die Seite verantwortlich? (Verein oder Privatperson)
-  name:       "BITTE AUSFÜLLEN (z. B. Musikkapelle Meckenhausen e. V.)",
-  strasse:    "BITTE AUSFÜLLEN (Straße und Hausnummer)",
-  ort:        "BITTE AUSFÜLLEN (Postleitzahl und Ort)",
+  name:       "Maximilian Bürk",
+  strasse:    "Hirschberger Str. 36",
+  ort:        "92339 Beilngries)",
 
   // Nur beim eingetragenen Verein (e. V.), sonst leer lassen:
   vertreten:  "",   // z. B. "1. Vorsitzender Max Mustermann"
   register:   "",   // z. B. "Amtsgericht Nürnberg, VR 12345"
 
   // Kontakt: E-Mail ist Pflicht, Telefon optional
-  email:      "BITTE AUSFÜLLEN (E-Mail-Adresse)",
+  email:      "maximilian.buerk@gmail.com",
   telefon:    "",
 
   // Verantwortlich für den Inhalt (Person mit Anschrift).
