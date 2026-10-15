@@ -11,7 +11,7 @@ window.IMPRESSUM = {
   // Wer ist für die Seite verantwortlich? (Verein oder Privatperson)
   name:       "Maximilian Bürk",
   strasse:    "Hirschberger Str. 36",
-  ort:        "92339 Beilngries)",
+  ort:        "92339 Beilngries",
 
   // Nur beim eingetragenen Verein (e. V.), sonst leer lassen:
   vertreten:  "",   // z. B. "1. Vorsitzender Max Mustermann"
